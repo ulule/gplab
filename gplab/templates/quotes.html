@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Quotes admin</title>
+
+        <link href="{{ url_for('static', filename='css/generic.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/gh-button.css') }}" rel="stylesheet" />
+
+        <style type="text/css">
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 13px;
+                line-height: 18px;
+                color: #333;
+            }
+
+            .valid {
+                background-color: #E1F6E1 !important;
+            }
+
+            .invalid {
+                background-color: #FCEDED !important;
+            }
+
+            .quote-status {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 800px; margin: 0 auto;">
+
+            <div style="text-align: right; margin-bottom: 20px">
+                <a href="{{ url_for('contacts_export', lang=lang) }}" class="button icon log">Export {{ contacts_count }} contacts</a>
+            </div>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Text</th>
+                        <th>Name</th>
+                        <th>Email address</th>
+                        <th>Date creation</th>
+                        <th>Status</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for quote in quotes %}
+                    <tr>
+                        <td class="quote-author">{{ quote.author }}</td>
+                        <td class="quote-text">{{ quote.text }}</td>
+                        <td>
+                            {{ quote.name }}
+                        </td>
+                        <td>
+                            {{ quote.email }}
+                        </td>
+                        <td>
+                            {{ quote.created_at.strftime("%Y-%m-%d %H:%M:%S") }}
+                        </td>
+    
+                        <td class="{% if quote.valid %}valid{% else %}invalid{% endif %}">
+                            <a href="{{ url_for('quote_change_status', lang=lang) }}" style="" data-identifier="{{ quote.id }}" class="quote-status">
+                                &nbsp;
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="{{ url_for('quote_edit', quote_id=quote.id, lang=lang) }}" class="quote-edit button icon edit">edit</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.quote-status').click(function(e) {
+                    e.preventDefault();
+
+                    var _this = $(this);
+
+                    $.ajax({
+                        url: _this.attr('href'),
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            quote_id: _this.data('identifier')
+                        },
+                        success: function(data) {
+                            _this.parent().attr('class', data.valid ? 'valid':'invalid');
+                        }
+                    });
+                });
+
+                $('.quote-edit').click(function(e) {
+                    e.preventDefault();
+
+                    var _this = $(this),
+                        parent = $(this).parent().parent()
+                        quote_text_container = parent.find('.quote-text'),
+                        quote_author_container = parent.find('.quote-author')
+
+                    if (!parent.hasClass('edit-in-place')) {
+                        var quote_text = quote_text_container.html(),
+                            quote_author = quote_author_container.html();
+
+                        quote_text_container.empty().append('<textarea name="text" class="tw-forms">'+quote_text+'</textarea>');
+
+                        quote_author_container.empty().append('<input type="text" name="text" class="tw-forms" value="' + quote_author + '" />');
+
+                        parent.addClass('edit-in-place');
+
+                        _this.addClass('active');
+
+                    } else {
+                        var quote_text = quote_text_container.find('textarea').val(),
+                            quote_author = quote_author_container.find('input').val();
+
+                        $.ajax({
+                            type: 'POST',
+                            url: _this.attr('href'),
+                            dataType: 'json',
+                            data: {
+                                text: quote_text,
+                                author: quote_author
+                            },
+                            success: function(data) {
+                                quote_text_container.empty().append(quote_text);
+
+                                quote_author_container.empty().append(quote_author);
+
+                                parent.removeClass('edit-in-place');
+
+                                _this.removeClass('active');
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

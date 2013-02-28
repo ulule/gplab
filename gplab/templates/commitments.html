@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div id="commitments">
+        {{ _("Gamesplanet Lab Commitments content") }}
+    </div>
+{% endblock %}
+
+{% block title %}{{ _("GAMESPLANET LAB Commitments") }}{% endblock %}
+
+{% block extend_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/commitments.css') }}" type="text/css" />
+    {{ super() }}
+{% endblock %}

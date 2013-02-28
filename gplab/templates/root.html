@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+<link type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}" rel="shortcut icon" />
+
+{% block extend_css %}
+    {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}" type="text/css" />
+    {% endassets %}
+{% endblock %}
+
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    {% assets "js_all" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-15279848-1']);
+        _gaq.push(['_setAccount', 'UA-32982011-1']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_setDomainName', '.lab.gamesplanet.com']);
+        {% block trackPageview %}
+        _gaq.push(['_trackPageview']);
+        {% endblock %}
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    {% block extend_js %}
+
+    {% endblock %}
+</body>
+</html>

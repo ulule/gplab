@@ -1,0 +1,178 @@
+# French translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-06-29 16:31+0200\n"
+"PO-Revision-Date: 2012-07-02 11:38+0100\n"
+"Last-Translator: hi <hi@home.com>\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: app.py:81
+msgid "Name"
+msgstr "Nom"
+
+#: app.py:85
+#: app.py:100
+msgid "Email Address"
+msgstr "Adresse Email"
+
+#: app.py:87
+#: app.py:102
+msgid "Invalid email address."
+msgstr "Adresse Email incorrecte."
+
+#: app.py:90
+msgid "Author"
+msgstr "Auteur original"
+
+#: app.py:94
+msgid "Text"
+msgstr "Texte"
+
+#: app.py:110
+msgid "Sorry, you can't register twice with this email address"
+msgstr "Cette addresse email a déjà été utilisée."
+
+#: app.py:195
+msgid "Your quote has been successfully added and will be reviewed shortly!"
+msgstr "Votre citation a bien été enregistrée et sera validée dans les plus brefs délais."
+
+#: app.py:208
+msgid "Your contact has been successfully added! You will be notified by email when Gamesplanet Lab goes live. In the meantime: have fun!"
+msgstr "Votre addresse email a été enregistrée avec succès, vous serez tenu informés dès la mise en ligne de Gamesplanet LAB."
+
+#: templates/commitments.html:5
+msgid "Gamesplanet Lab Commitments content"
+msgstr "<h2>CHARTE GAMESPLANET <span class=\"lab\">LAB</h2><h3>10 ENGAGEMENTS POUR UN FINANCEMENT PARTICIPATIF DE JEUX VIDEO DE QUALITE</h3><h4>Préambule</h4><p>Le secteur de la distribution digitale de jeux vidéo, et plus particulièrement du financement participatif de jeux vidéo, est confronté à une multiplication des appels à projets et aux attentes de plus en plus exigeantes des soutiens qui vont demander à être rassurés sur le sérieux des projets qui leur sont soumis et sur la qualité des jeux qu'ils ont financé. </p><p>Gamesplanet a décidé de s'engager dans le financement participatif de jeux vidéo de qualité, en sensibilisant et en mobilisant les acteurs du secteur afin qu'ils s'engagent à leur tour à garantir la satisfaction des joueurs. </p><p>Gamesplanet Lab est la première plate-forme de crowdfunding entièrement dédiée au jeu vidéo, conçue par des professionnels (et des passionnés !) du jeu vidéo, à intégrer dans sa définition même de réelles garanties pour les joueurs, mais aussi un cadre clair et bénéfique aux professionnels du jeu vidéo. La plate-forme est réalisée en partenariat avec Ulule.com, le leader européen du crowdfunding. </p><p><strong>La Charte Gamesplanet Lab qui se décline en 10 engagements</strong>, entend répondre aux exigences et aux attentes des soutiens et des joueurs. Au-delà des garanties offertes aux joueurs, elle s'adresse aux professionnels du marché du jeu vidéo et aux prestataires de service qui s'inscrivent dans la volonté de proposer des prestations de qualité, en possédant un label ou en décidant d'entreprendre une démarche qualité. </p><h4>NOS 10 ENGAGEMENTS</h4><dl><dt>Des informations transparentes</dt> <dd>Les informations relatives aux projets et communiquées aux soutiens sont claires, précises et tenues à jour. </dd><dt>Un porteur de projet bien identifié</dt> <dd>L'identité du porteur de projet est toujours indiquée, ainsi que le moyen de le contacter directement sur sa page profil.</dd><dt>Un vrai travail de sélection</dt> <dd>Gamesplanet Lab procède à une sélection de tous les projets. Ce travail en amont – et la contractualisation systématique avec les porteurs de projets – permet d’assurer une qualité optimum des projets retenus et d’en renforcer les chances de succès.</dd><dt>Une logique de financement vertueuse</dt> <dd>Si un projet n'atteint pas le minimum demandé, ou en cas de suppression d’un projet en cours de collecte de fond par son porteur, l'ensemble des personnes qui ont soutenu le projet reçoit un mail leur notifiant cet échec ou cette suppression (et les raisons données si il s’agit d’une suppression). Bien entendu, ces personnes pourront récupérer leurs contributions et aucun fond ne sera versé au porteur ni à Gamesplanet Lab.</dd><dt>Une garantie sur la délivrance des contreparties </dt> <dd>Par contrat, tous les porteurs de projet sur Gamesplanet Lab s’engagent à définir un jeu dont la faisabilité est préalablement mesurée entre les parties. Toutes les contreparties doivent apporter aux soutiens des avantages exclusifs par comparaison au jeu distribué dans sa version finale (les contreparties sont proposées en nombre limité, sont uniques ou moins chères que le produit final). Enfin, les soutiens sont associés au processus créatif du jeu en ayant l’opportunité de recevoir des nouvelles régulières, de soumettre des idées ou du contenu et de voter en réponse aux idées soumises par le porteur de projet. </dd><dt>Un calendrier clair</dt> <dd>Un délai, le cas échéant approximatif, est indiqué pour la délivrance des contreparties. En cas de retard, le porteur du projet s’engage à informer les soutiens dès que possible d’une nouvelle date de délivrance. </dd><dt>Une propriété intellectuelle respectée</dt> <bb>Les sommes versées ne peuvent en aucun cas être assimilées à une cession de parts ou d'actions, ni à une cession de droits d'auteur. Le porteur de projet conserve l'entière propriété intellectuelle de son projet.</bb><dt>Des paiements sécurisés</dt> <dd>Gamesplanet Lab et Ulule.com utilisent des systèmes monétiques répondant aux normes bancaires en vigueur : toutes les transactions sont entièrement sécurisées et Gamesplanet Lab ne conserve aucune information bancaire directement exploitable susceptible d’être “hackées”.</dd><dt>DRM : l’expérience du joueur, d’abord</dt> <dd> Les porteurs de projets s’engagent à intégrer dans les jeux vidéo délivrés à l’échéance aux soutiens une mise en place de DRM (Digitals Rights Management) ayant pour priorité l’expérience client (pouvoir installer ses jeux sur toutes ses machines) plutôt qu’un  flicage systématique, et la garantie de l’absence de client résident utilisé à des fins marketing.</dd><dt>Un label qualité défini avec les joueurs</dt> <dd> Le porteur de projet s’engage sur le respect de valeurs positives au sein des jeux, et les soutiens sont sollicités pour valider des critères de qualité : chaque projet terminé est soumis à un panel de joueurs issu des soutiens du projet et fait l’objet d’une note qualité dont l’incidence  est l’obtention ou non d’un label spécifique « Gamesplanet Lab ». Ce label, développé pour récompenser les porteurs de projet ayant reçu de la part d’un minimum de 70%% de leurs soutiens la reconnaissance de la qualité du jeu délivré, indiquera au consommateur la satisfaction des joueurs et impliquera un niveau de promotion accru du jeu sur le réseau de distribution.</dd></dl><p>Tous les porteurs de projets, éditeurs ou studio qui participent à Gamesplanet Lab ont souscrit à ces engagements.</p>"
+
+#: templates/commitments.html:9
+msgid "GAMESPLANET LAB Commitments"
+msgstr "Nos 10 Engagements"
+
+#: templates/faq.html:5
+msgid "Gamesplanet Lab FAQ content"
+msgstr "<h2>Gamesplanet <span class=\"lab\">Lab</span> FAQ</h2><dt>Pourquoi Gamesplanet s’engage t-elle dans le financement participatif de jeux vidéo ?</dt><dd>Gamesplanet distribue déjà des jeux en pré-commandes à la demande des éditeurs, il ne s’agit que de se positionner un peu plus en amont des sorties et d’échapper à la contrainte qui consiste à proposer le même produit que tout le monde, au même moment que tout le monde, à partir du même prix de vente aux public et de marges similaires;</br>Gamesplanet est un distributeur de jeux vidéo par téléchargement. C’est dans son ADN de distributeur numérique d’élargir son offre à des projets sélectionnés qui, proposés à la pré-vente, deviendront de futurs jeux indépendants et de qualité, potentiellement distribués partout;</br>Grâce au financement participatif, Gamesplanet entend soumettre en avance aux clients certains projets sélectionnés et donner une chance à un jeu  qui ne serait peut-être pas sorti sur le marché faute de support par l’industrie classique de financement (ou qui serait sortie sous une forme différente, résultat d’un compromis entre les ressources mobilisées et les impératifs du marché) ; il s’agit pour les ayants droit sélectionnés de faire des jeux meilleurs, détachés de contraintes imposées par des considérations  financières et forts du retour des soutiens ;</br>Grâce au financement participatif, Gamesplanet entend offrir aux soutiens des contreparties inédites par rapport à un jeu vidéo mis classiquement sur le marché : i) suivi, voire, autant que possible, participation des joueurs au processus créatif du jeu pour une relation inédite entre le joueur et le studio de développement ;  ii) accès pour le soutien au jeu lors de sa publication mais également accès à toute une série inédite de contreparties notamment artistiques intimement liées au processus créatifs (« artwork », dessins, crayonnés originaux, pièces uniques, rencontres privées avec les créateurs, etc…) ;</br>Grâce au financement participatif, Gamesplanet entend garantir la mise en place de DRM ayant pour priorité l’expérience client (pouvoir installer ses jeux sur toutes ses machines) plutôt qu’un  flicage systématique; garantir l’absence de client résident utilisé à des fins purement  marketing;</br><Grâce au financement participatif, Gamesplanet entend garantir autant que possible la qualité des jeux offerts aux soutiens, s’engager sur  les dates de sortie et le respect de valeurs positives au sein des jeux. Ceci-est possible dès lors que Gamesplanet s’engage à une sélection rigoureuse des projets (via un comité de sélection ad hoc), un contrôle qualité à la livraison (via un panel de joueurs issus des soutiens donnant une note au jeu) et à des relations contractuelles avec chaque projet préalablement à sa présentation aux soutiens (le porteur de projet ne se contentant pas de simplement adhérer aux Conditions Générales de Ventes de la plateforme de financement participatif mais s’engageant par contrat auprès de Gamesplanet) ;</br>Grâce au financement participatif, Gamesplanet entend également garantir la rémunération des auteurs et le fait qu’ils puissent continuer à créer au sein d’un cercle vertueux ;</br>Et pour formaliser ces engagements, partagés contractuellement par les porteurs de projets, Gamesplanet met ainsi un œuvre un label spécifique « Gamesplanet Lab » que vous pouvez consultez ici.</dd><dt>Qu’est-ce que Gamesplanet apporte de nouveau dans le domaine du financement participatif de jeux vidéo ?</dt><dd>Une spécialisation 100% jeux vidéo pour éviter de débattre de projets qui n’ont rien à voir avec nos capacités d’expertise, une évaluation en amont des projets afin d’éviter de soumettre aux soutiens une multitude de projets de niveaux totalement différents, un gage de sérieux et de professionnalisme en attirant l’attention des porteurs de projets sur l’importance de ne pas décevoir les soutiens.</dd><dt>Pourquoi Gamesplanet s’est-elle associée à Ulule.com ?</dt><dd>Ulule est un acteur de référence du crowdfunding : c’est la première plate-forme en Europe avec plus de 1000 projets financés, c’est la première plate-forme multilingue (français, anglais, italien, allemand, espagnol, portugais), et c’est une plate-forme qui s’intègre parfaitement avec notre vision de la distribution digitale de demain à travers un financement lié à un nombre de produits à pré-vendre. Ajoutez à cela : une plate-forme technologique robuste, des paiements 100% sécurisés, une interface des plus réussies, et vous comprendrez que nous ayons retenu Ulule pour accompagner le développement de Gamesplanet Lab ! </dd><dt>Comment sont sélectionnés les projets proposés sur Gamesplanet Lab ?</dt><dd>On discute beaucoup entre nous, on échange avec les développeurs, on regarde ce qu’ils ont fait dans le passé, pourquoi et comment, on réfléchit ensemble à ce qu’on peut et ce qu’on veut faire, au type de jeux auxquels on aimerait jouer… On vérifie que tout le monde a des intentions compatibles, on met ça dans le mixeur et on secoue bien fort !</br>Quand le résultat nous plait, on se dit que ça a du sens de vous le proposer alors on signe et on s’engage à fond pour faire sortir le projet !</dd><dt>Comment soumettre un projet ?</dt><dd>Contactez nous à <a href=\"mailto:lab@gamesplanet.com\">lab@gamesplanet.com</a></dd>"
+
+#: templates/faq.html:9
+msgid "GAMESPLANET LAB FAQ"
+msgstr "FAQ"
+
+#: templates/home.html:5
+msgid "GAMESPLANET LAB: welcome!"
+msgstr "GAMESPLANET LAB: bienvenue!"
+
+#: templates/home.html:12
+msgid "in cooperation with"
+msgstr "En coopération avec"
+
+#: templates/home.html:43
+msgid "show more quotes!"
+msgstr "Plus de citations"
+
+#: templates/home.html:44
+msgid "suggest a quote!"
+msgstr "Suggérer une citation"
+
+#: templates/home.html:50
+msgid "Creativity powers the Lab ! Suggest your very own modified scientific-historical-crowdfunding quote."
+msgstr "Sans créativité, point de Lab! Modifiez et suggérez votre propre citation historico-geek."
+
+#: templates/home.html:85
+msgid "Original Author <span class=\"required\">*</span>"
+msgstr "Auteur original <span class=\"required\">*</span>"
+
+#: templates/home.html:99
+msgid "Text <span class=\"required\">*</span>"
+msgstr "Texte <span class=\"required\">*</span>"
+
+#: templates/home.html:114
+msgid "Cancel"
+msgstr "Annuler"
+
+#: templates/home.html:116
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/home.html:125
+msgid "Get ready for <strong>GAMESPLANET LAB</strong>."
+msgstr "PRÉPAREZ-VOUS À L'ARRIVÉE DE <strong>GAMESPLANET LAB</strong>."
+
+#: templates/home.html:127
+msgid "The very first platform specifically designed for gamers eager to support innovative <strong>video games projects</strong>.</p>"
+msgstr "Le premier site entièrement dédié au <strong>financement participatif de jeux vidéo</strong>."
+
+#: templates/home.html:129
+msgid "From test-tube to prototype, support and interact directly with <strong>professional studios</strong> as they develop tomorrow's <strong>gaming hits</strong>, while receiving exclusive rewards to show off your dedication!"
+msgstr "Du concept de jeu au prototype, apportez votre soutien aux studios qui développent les jeux video de demain, et recevez des récompenses inédites."
+
+#: templates/home.html:138
+msgid "Register now and get the chance to win awesome prizes (rewards valued at 5000€!):"
+msgstr "Enregistrez-vous pour gagner un des deux lots d'une valeur de 5000€ :"
+
+#: templates/home.html:141
+msgid "a 2-day tour of Kiev's pepper vodka bars with the developers of Magrunner!"
+msgstr "Découvrez Kiev et ses bars à vodka en compagnie des développeurs de Magrunner!"
+
+#: templates/home.html:142
+msgid "an ingame character modeled after YOU in Pendulo's new game!"
+msgstr "ou/ Incarnez un personnage dans le nouveau jeu de Pendulo !"
+
+#: templates/home.html:147
+msgid "Email address"
+msgstr "Adresse Email"
+
+#: templates/home.html:149
+msgid "Notify me"
+msgstr "Informez-moi"
+
+#: templates/home.html:171
+msgid "Featured Projects"
+msgstr "Projets à l'affiche"
+
+#: templates/home.html:175
+msgid "first-person action puzzle game set in a cyberpunk version of H.P. Lovecraft’s Cthulhu Mythos!"
+msgstr "jeu d’action - aventure à la première personne combinant un univers cyberpunk futuriste avec le mythe de Cthulhu d’H.P. Lovecraft!"
+
+#: templates/home.html:181
+msgid "Team up with Pendulo Studios, the authors of <strong>RUNAWAY</strong> to create an adventure that will be more than just a game"
+msgstr "Associez-vous avec Pendulo Studios, les développeurs de <strong>RUNAWAY</strong>, et participez à la création de leur nouveau jeu d'aventure."
+
+#: templates/home.html:187
+msgid "UPCOMING PROJECT"
+msgstr "Projet à venir"
+
+#: templates/home.html:187
+msgid "Who knows what the future holds ?"
+msgstr "Qui sait ce que le futur nous réserve?"
+
+#: templates/home.html:191
+msgid "More to come..."
+msgstr "Prochainement…"
+
+#: templates/home.html:201
+msgid "Share the lab!"
+msgstr "Partager"
+
+#: templates/home.html:206
+msgid "Tweet about it!"
+msgstr "Tweeter"
+
+#: templates/home.html:216
+msgid "Gamesplanet Lab, the very first platform specifically designed for gamers"
+msgstr "Gamesplanet Lab, le premier site de financement participatif dédié aux gamers"
+
+#~ msgid "Gamesplanet Lab FAQ"
+#~ msgstr ""
+
+#~ msgid "Contest rules"
+#~ msgstr "Règlement du concours"

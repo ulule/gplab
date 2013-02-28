@@ -1,0 +1,187 @@
+# Translations template for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-06-29 16:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: app.py:81
+msgid "Name"
+msgstr ""
+
+#: app.py:85 app.py:100
+msgid "Email Address"
+msgstr ""
+
+#: app.py:87 app.py:102
+msgid "Invalid email address."
+msgstr ""
+
+#: app.py:90
+msgid "Author"
+msgstr ""
+
+#: app.py:94
+msgid "Text"
+msgstr ""
+
+#: app.py:110
+msgid "Sorry, you can't register twice with this email address"
+msgstr ""
+
+#: app.py:195
+msgid "Your quote has been successfully added and will be reviewed shortly!"
+msgstr ""
+
+#: app.py:208
+msgid ""
+"Your contact has been successfully added! You will be notified by email "
+"when Gamesplanet Lab goes live. In the meantime: have fun!"
+msgstr ""
+
+#: templates/commitments.html:5
+msgid "Gamesplanet Lab Commitments content"
+msgstr ""
+
+#: templates/commitments.html:9
+msgid "GAMESPLANET LAB Commitments"
+msgstr ""
+
+#: templates/faq.html:5
+msgid "Gamesplanet Lab FAQ content"
+msgstr ""
+
+#: templates/faq.html:9
+msgid "GAMESPLANET LAB FAQ"
+msgstr ""
+
+#: templates/home.html:5
+msgid "GAMESPLANET LAB: welcome!"
+msgstr ""
+
+#: templates/home.html:12
+msgid "in cooperation with"
+msgstr ""
+
+#: templates/home.html:43
+msgid "show more quotes!"
+msgstr ""
+
+#: templates/home.html:44
+msgid "suggest a quote!"
+msgstr ""
+
+#: templates/home.html:50
+msgid ""
+"Creativity powers the Lab ! Suggest your very own modified scientific-"
+"historical-crowdfunding quote."
+msgstr ""
+
+#: templates/home.html:85
+msgid "Original Author <span class=\"required\">*</span>"
+msgstr ""
+
+#: templates/home.html:99
+msgid "Text <span class=\"required\">*</span>"
+msgstr ""
+
+#: templates/home.html:114
+msgid "Cancel"
+msgstr ""
+
+#: templates/home.html:116
+msgid "Send"
+msgstr ""
+
+#: templates/home.html:125
+msgid "Get ready for <strong>GAMESPLANET LAB</strong>."
+msgstr ""
+
+#: templates/home.html:127
+msgid ""
+"The very first platform specifically designed for gamers eager to support"
+" innovative <strong>video games projects</strong>.</p>"
+msgstr ""
+
+#: templates/home.html:129
+msgid ""
+"From test-tube to prototype, support and interact directly with "
+"<strong>professional studios</strong> as they develop tomorrow's "
+"<strong>gaming hits</strong>, while receiving exclusive rewards to show "
+"off your dedication!"
+msgstr ""
+
+#: templates/home.html:138
+msgid ""
+"Register now and get the chance to win awesome prizes (rewards valued at "
+"5000€!):"
+msgstr ""
+
+#: templates/home.html:141
+msgid "a 2-day tour of Kiev's pepper vodka bars with the developers of Magrunner!"
+msgstr ""
+
+#: templates/home.html:142
+msgid "an ingame character modeled after YOU in Pendulo's new game!"
+msgstr ""
+
+#: templates/home.html:147
+msgid "Email address"
+msgstr ""
+
+#: templates/home.html:149
+msgid "Notify me"
+msgstr ""
+
+#: templates/home.html:171
+msgid "Featured Projects"
+msgstr ""
+
+#: templates/home.html:175
+msgid ""
+"first-person action puzzle game set in a cyberpunk version of H.P. "
+"Lovecraft’s Cthulhu Mythos!"
+msgstr ""
+
+#: templates/home.html:181
+msgid ""
+"Team up with Pendulo Studios, the authors of <strong>RUNAWAY</strong> to "
+"create an adventure that will be more than just a game"
+msgstr ""
+
+#: templates/home.html:187
+msgid "UPCOMING PROJECT"
+msgstr ""
+
+#: templates/home.html:187
+msgid "Who knows what the future holds ?"
+msgstr ""
+
+#: templates/home.html:191
+msgid "More to come..."
+msgstr ""
+
+#: templates/home.html:201
+msgid "Share the lab!"
+msgstr ""
+
+#: templates/home.html:206
+msgid "Tweet about it!"
+msgstr ""
+
+#: templates/home.html:216
+msgid "Gamesplanet Lab, the very first platform specifically designed for gamers"
+msgstr ""
+

@@ -1,0 +1,340 @@
+# English translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-06-29 16:31+0200\n"
+"PO-Revision-Date: 2012-06-28 10:34+0100\n"
+"Last-Translator: \n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: app.py:81
+msgid "Name"
+msgstr ""
+
+#: app.py:85 app.py:100
+msgid "Email Address"
+msgstr ""
+
+#: app.py:87 app.py:102
+msgid "Invalid email address."
+msgstr ""
+
+#: app.py:90
+msgid "Author"
+msgstr ""
+
+#: app.py:94
+msgid "Text"
+msgstr ""
+
+#: app.py:110
+msgid "Sorry, you can't register twice with this email address"
+msgstr ""
+
+#: app.py:195
+msgid "Your quote has been successfully added and will be reviewed shortly!"
+msgstr ""
+
+#: app.py:208
+msgid ""
+"Your contact has been successfully added! You will be notified by email "
+"when Gamesplanet Lab goes live. In the meantime: have fun!"
+msgstr ""
+
+#: templates/commitments.html:5
+msgid "Gamesplanet Lab Commitments content"
+msgstr ""
+"<h2>GAMESPLANET <span class=\"lab\">LAB</span> CHARTER</h2>        <h3>10"
+" COMMITMENTS FOR QUALITY CROWDFUNDING FOR VIDEO GAMES</h3>        "
+"<h4>Preamble</h4>        <p>The video game digital distribution sector – "
+"and in particular video game crowdfunding – is faced with an increasing "
+"number of calls for projects, as well as the demanding requirements of "
+"backers who need to be reassured about the reliability of presented "
+"projects and the quality of games they back financially.</p>        "
+"<p>Gamesplanet has decided to provide services for crowdfunding of "
+"quality video games, by raising awareness of the actors in the sector so "
+"that they, in turn, commit to guaranteeing the satisfaction of "
+"gamers.</p>        <p>Gamesplanet Lab is the first crowdfunding platform "
+"exclusively dedicated to video games and designed by video game "
+"professionals (and fans!), to integrate real guarantees for gamers, as "
+"well as a straightforward and beneficial framework for video game "
+"professionals. The platform is created in partnership with Ulule.com, the"
+" leader in crowdfunding in Europe.</p>        <p><strong>The Gamesplanet "
+"Lab charter comprises 10 commitments</strong>, and aims at catering to "
+"the requirements and expectations of backers and gamers alike. Beyond "
+"providing guarantees for gamers, the charter is designed for video game "
+"professionals and service providers who endeavor to provide quality "
+"services, through ownership of a label or initiation of a quality "
+"process.</p>        <h4>OUR 10 COMMITMENTS</h4>        <dl>            "
+"<dt>Clear information</dt>                <dd>All project-related "
+"information to backers should be clear, precise and up-to-date.</dd>"
+"            <dt>Project holder identity</dt>                <dd>The "
+"identity of a project holder is public, and their contact details always "
+"available on their profile page.</dd>            <dt>Real selection "
+"work</dt>                <dd>With Gamesplanet Lab every project is "
+"handpicked. This, combined with the contractual link with project "
+"holders, allows for the best project quality and chances for "
+"success.</dd>            <dt>Virtuous funding solutions</dt>"
+"                <dd>If a project does not reach its funding goals, or if "
+"a project holder discontinues an ongoing project, all backers will "
+"receive an email to inform them the project has been discontinued or has "
+"not reached the full pledged amount (with detailed explanations in case "
+"of discontinuation). All backers will receive a refund of their "
+"contribution and neither the project holder nor Gamesplanet Lab shall "
+"receive any money for that specific project.</dd>            <dt>A "
+"guarantee for the delivery of rewards</dt>                <dd>All project"
+" holders on Gamesplanet Lab commit by contract to design a game whose "
+"feasibility will have previously been assessed by both parties. All "
+"rewards must bring backers exclusive advantages over purchasers of the "
+"distributed game in its final version (rewards are offered in limited "
+"editions, are unique to backers, or the game is offered at a lower price "
+"than the final retail price). Finally, backers are involved in the "
+"creative process of the game and receive project news regularly, have the"
+" possibility of submitting ideas or content, and may vote for any "
+"suggestion put forward by the project holder.</dd>            <dt>A clear"
+" timetable</dt>                <dd>The timetable must mention a delivery "
+"date, at least estimated, for the rewards. In the event of a late "
+"delivery, the project holder commits to informing backers as soon as "
+"possible of the new delivery date.</dd>            <dt>Respect of "
+"intellectual property rights</dt>                <dd>Tamounts paid out "
+"may in no circumstances be regarded as transfer of shares, nor as "
+"copyright assignment. The project holder retains full intellectual "
+"property of his project.</dd>            <dt>Secure payments</dt>"
+"                <dd>Gamesplanet Lab and Ulule.com both use payment "
+"systems that conform to applicable banking standards: all transactions "
+"are fully secured and Gamesplanet Lab does not keep any banking details "
+"which could be hacked.</dd>            <dt>DRM: the gamer’s experience "
+"before all</dt>                <dd>Project holders commit to integrating "
+"to their final game, on delivery to backers, a DRM (Digital Rights "
+"Management) system that prioritizes customer experience (possibility of "
+"installing their games on all of their machines) rather than systematic "
+"control, and the guarantee that no resident clients will be used for "
+"marketing purposes.</dd>            <dt>A quality label designed with "
+"gamers</dt>                <dd>The project holder commits to respecting "
+"positive values within the games, and backers are invited to validate "
+"quality criteria: each completed project is presented to a panel of "
+"gamers comprised of project backers who hold the responsibility of "
+"grading the project for quality, resulting in the issuance or not of a "
+"specific Gamesplanet Lab label. This label, designed to reward project "
+"holders with a minimum of 70%% backer approval for quality of the game "
+"delivered, will be an indicator of gamer satisfaction for consumers and "
+"will result in better promotion of the game within the distribution "
+"network.</dd>        </dl>        <p>All project holders, publishers or "
+"studios who are part of Gamesplanet Lab have subscribed to the "
+"commitments above.</p>"
+
+#: templates/commitments.html:9
+msgid "GAMESPLANET LAB Commitments"
+msgstr ""
+
+#: templates/faq.html:5
+msgid "Gamesplanet Lab FAQ content"
+msgstr ""
+"<h2>Gamesplanet <span class=\"lab\">Lab</span> FAQ</h2>        <dl>"
+"            <dt>Why is Gamesplanet getting into video games "
+"crowdfunding?</dt>                <dd>Gamesplanet already distributes "
+"pre-order games upon request from publishers, so it’s only a matter of "
+"positioning Gamesplanet a bit higher up in the distribution chain and "
+"getting rid of the constraints of offering the same product as everyone "
+"else, always at the same time, price point and margins as "
+"competitors.<br/>                Gamesplanet is a video games downloading"
+" distributor. It is in its digital distributor’s DNA to widen its offer "
+"through selected projects that, available through pre-sale, will become "
+"independent quality games, which could potentially be distributed "
+"everywhere.<br/>                With crowdfunding, Gamesplanet wants to "
+"submit selected projects to clients early on and give a chance to games "
+"that may not have made it on the market due to the lack of support from "
+"the traditional funding industry (or that would have made it out in a "
+"different form as a result of compromises between resources and market "
+"imperatives.) The goal is for those selected to make better games, away "
+"from the constraints imposed by financial considerations and strengthened"
+" by backers’ feedback.<br/>                With crowdfunding, Gamesplanet"
+" wants to offer backers new rewards compared to video games distributed "
+"traditionally: 1) follow up and as much participation of players in the "
+"creative process as possible for an unprecedented relationship between "
+"the player and the development studio; 2) access for game support during "
+"its publication but also access to a whole new series of rewards, "
+"especially artistic ones, closely linked to the creative process "
+"(artwork, drawings, pencil originals, unique pieces, private meetings "
+"with creators,…)<br/>                With crowdfunding, Gamesplanet wants"
+" to guarantee the use of Digital Rights Management which will give "
+"priority to the client’s experience (being able to install games on all "
+"devices) instead of systematic policing; it also wants to guarantee that "
+"a resident client won’t be used for purely marketing purposes.<br/>"
+"                With crowdfunding, Gamesplanet wants to guarantee as much"
+" as possible the quality of games offered to backers, to commit to "
+"publication dates and push positive values in games. This is possible "
+"since Metaboli is committed to a rigorous selection of projects (through "
+"an ad hoc selection committee,) to quality control upon delivery (through"
+" a panel of backer gamers who grade the product) and to contractual "
+"relations with each project before its presentation to backers(the "
+"project creator doesn’t just commit to the crowfunding platform’s General"
+" Terms of Sale, he also signs a contract with Metaboli).<br/>"
+"                With crowdfunding, Gamesplanet wants to guarantee that "
+"authors will be paid and that they’ll be able to continue creating inside"
+" a virtuous circle.<br/>                To formalize these commitments, "
+"shared by project creators through a contract, Metaboli is setting up a "
+"specific « Gamesplanet Lab » label that you can find here.</dd>"
+"            <dt>What kind of innovation does Gamesplanet bring to the "
+"video games crowdfunding sector?</dt>                <dd>100%% focus on "
+"video games to avoid discussing projects that are out of our area of "
+"expertise, a pre-evaluation of all projects to avoid presenting backers "
+"multiple projects of very different quality, a guarantee of "
+"professionalism by reminding project creators of how important it is not "
+"to disappoint their backers. See our Chart here.<dd>            <dt>Why "
+"has Gamesplanet teamed up with Ulule.com?</dt>                <dd>Ulule "
+"is a major player in crowdfunding: it is the leading platform in Europe "
+"with more than 800 projects funded, the first multilingual platform "
+"(French, English, Italian, German, Spanish, Portuguese,) and it fits "
+"perfectly with our idea of tomorrow’s digital distribution through "
+"funding based on a number of products available for pre-sale. Add to that"
+" a strong technological platform, 100%% safe payments, a successful "
+"interface and you see why we chose Ulule to help develop Gamesplanet "
+"Lab!</dd>            <dt>How are the projects available on Gamesplanet "
+"Lab selected?</dt>                <dd>We talk a lot with each other, we "
+"discuss ideas with developers, we look at what they’ve done in the past, "
+"how and why, we think together about what we can and want to do with it, "
+"about what type of games we would like to play… We make sure that "
+"everyone has compatible intentions, we put it all together and we shake "
+"it up!<br/>                When we like the result, we believe it makes "
+"sense to present it to you, so we sign and we fully commit to making the "
+"project happen!</dd>            <dt>How do you submit a project?</dt>"
+"                <dd>Contact us at: <a "
+"href=\"mailto:projects@gamesplanet.com\">projects@gamesplanet.com</a></dd>"
+"        </dl>"
+
+#: templates/faq.html:9
+msgid "GAMESPLANET LAB FAQ"
+msgstr ""
+
+#: templates/home.html:5
+msgid "GAMESPLANET LAB: welcome!"
+msgstr ""
+
+#: templates/home.html:12
+msgid "in cooperation with"
+msgstr ""
+
+#: templates/home.html:43
+msgid "show more quotes!"
+msgstr ""
+
+#: templates/home.html:44
+msgid "suggest a quote!"
+msgstr ""
+
+#: templates/home.html:50
+msgid ""
+"Creativity powers the Lab ! Suggest your very own modified scientific-"
+"historical-crowdfunding quote."
+msgstr ""
+
+#: templates/home.html:85
+msgid "Original Author <span class=\"required\">*</span>"
+msgstr ""
+
+#: templates/home.html:99
+msgid "Text <span class=\"required\">*</span>"
+msgstr ""
+
+#: templates/home.html:114
+msgid "Cancel"
+msgstr ""
+
+#: templates/home.html:116
+msgid "Send"
+msgstr ""
+
+#: templates/home.html:125
+msgid "Get ready for <strong>GAMESPLANET LAB</strong>."
+msgstr ""
+
+#: templates/home.html:127
+msgid ""
+"The very first platform specifically designed for gamers eager to support"
+" innovative <strong>video games projects</strong>.</p>"
+msgstr ""
+
+#: templates/home.html:129
+msgid ""
+"From test-tube to prototype, support and interact directly with "
+"<strong>professional studios</strong> as they develop tomorrow's "
+"<strong>gaming hits</strong>, while receiving exclusive rewards to show "
+"off your dedication!"
+msgstr ""
+
+#: templates/home.html:138
+msgid ""
+"Register now and get the chance to win awesome prizes (rewards valued at "
+"5000€!):"
+msgstr ""
+
+#: templates/home.html:141
+msgid "a 2-day tour of Kiev's pepper vodka bars with the developers of Magrunner!"
+msgstr ""
+
+#: templates/home.html:142
+msgid "an ingame character modeled after YOU in Pendulo's new game!"
+msgstr "or/ an ingame character modeled after YOU in Pendulo's new game!"
+
+#: templates/home.html:147
+msgid "Email address"
+msgstr ""
+
+#: templates/home.html:149
+msgid "Notify me"
+msgstr ""
+
+#: templates/home.html:171
+msgid "Featured Projects"
+msgstr ""
+
+#: templates/home.html:175
+msgid ""
+"first-person action puzzle game set in a cyberpunk version of H.P. "
+"Lovecraft’s Cthulhu Mythos!"
+msgstr ""
+
+#: templates/home.html:181
+msgid ""
+"Team up with Pendulo Studios, the authors of <strong>RUNAWAY</strong> to "
+"create an adventure that will be more than just a game"
+msgstr ""
+
+#: templates/home.html:187
+msgid "UPCOMING PROJECT"
+msgstr ""
+
+#: templates/home.html:187
+msgid "Who knows what the future holds ?"
+msgstr ""
+
+#: templates/home.html:191
+msgid "More to come..."
+msgstr ""
+
+#: templates/home.html:201
+msgid "Share the lab!"
+msgstr ""
+
+#: templates/home.html:206
+msgid "Tweet about it!"
+msgstr ""
+
+#: templates/home.html:216
+msgid "Gamesplanet Lab, the very first platform specifically designed for gamers"
+msgstr ""
+
+#~ msgid "Contest rules"
+#~ msgstr ""
+

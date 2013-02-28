@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+
+.lab { color: #FFF; line-height: 0.9em; text-shadow: 1px 1px 0 #DD3E06; padding: 0 2px; background: #EF641E; border-radius: 4px; display: inline-block;}
+
+#faq { width: 730px; padding: 20px; background: url("../img/picto_faq.png") no-repeat scroll 20px 10px #EAEAEA; border-radius: 8px; counter-reset: chapter;}
+#faq h2 { font-family: "Doppio One", Arial; font-size: 28px; color: #333; font-weight: normal; text-transform: uppercase; letter-spacing: -1px; text-align: center; text-shadow: 2px 2px 0 #FFF;
+            padding-bottom: 8px; border-bottom: 1px solid #BBB; margin: 0 30px 20px;}
+#faq dl {}
+#faq dt { font-family: "Doppio One", Arial; font-size: 16px; color: #000; letter-spacing: -1px; text-transform: uppercase; text-shadow: 1px 1px 0 #FFF; margin-bottom: 5px;}
+#faq dt:before { content: counter(chapter) "."; counter-increment: chapter; color: #666; text-shadow: 1px 1px 0 #FFF; margin-right: 5px;}
+#faq dd { font-family: Arial; font-size: 13px; color: #333; line-height: 1.2em; margin: 0 18px 10px;}
+#faq dd a { color: #FF5500;}
+#faq dd a:hover { text-decoration: none;}
+#faq dd br { margin-bottom: 15px;}

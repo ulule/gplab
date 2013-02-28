@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div id="faq">
+        {{ _("Gamesplanet Lab FAQ content")}}
+    </div>
+{% endblock %}
+
+{% block title %}{{ _("GAMESPLANET LAB FAQ") }}{% endblock %}
+
+{% block extend_css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/faq.css') }}" type="text/css" />
+{% endblock %}
+

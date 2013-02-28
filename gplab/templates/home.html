@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% from "_formhelper.html" import render_field %}
+
+{% block title %}{{ _("GAMESPLANET LAB: welcome!") }}{% endblock %}
+
+{% block body %}
+    <div id="landingContent">
+        <div class="pageWidth">
+            <div class="randomQuote">
+
+                {% if quote %}
+                    <div class="quote-detail" data-identifier="{{ quote.id }}">
+                        <span class="quoteCitation">"{{ quote.text }}"</span>
+                        <span class="quoteAuthor">- {{ quote.author }}</span>
+                    </div>
+                {% endif %}
+
+                <div class="quoteActions">
+                    <a href="#" id="changeQuote" class="changeQuote">{{ _("show more quotes!") }}</a>
+                    <a href="#" id="submitQuote" class="{% if quote_form.errors %}active {% endif %}submitQuote">{{ _("suggest a quote!") }}</a>
+                </div>
+            </div>
+
+            <div id="quote-form-container" style="{% if not quote_form.errors %}display: none;{% endif %} border-top: 1px solid #DDD; border-bottom: 1px solid #DDD; padding: 10px 0 0; margin: 10px 0">
+                <div style="width: 400px; text-align: center; padding-top: 40px; padding-left: 30px; float: left;">
+                    {{ gettext("Creativity powers the Lab ! Suggest your very own modified scientific-historical-crowdfunding quote.") }}
+                </div>
+                <form method="POST" action="." id="quote-form" class="tw-forms" style="float: right; margin-bottom: 10px; margin-right: 60px">
+                    {{ quote_form.csrf_token }}
+
+                    <p>
+                    {{ quote_form.name.label }} {{ quote_form.name() }}
+
+                    {% with errors=quote_form.name.errors %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>
+                                    {{ error }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                    </p>
+                    <p>
+                    {{ quote_form.email.label }} {{ quote_form.email() }}
+                    {% with errors=quote_form.email.errors %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>
+                                    {{ error }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                    </p>
+                    <p>
+                    {{ quote_form.author.label(text=gettext("Original Author <span class=\"required\">*</span>")) }} {{ quote_form.author() }}
+                    {% with errors=quote_form.author.errors %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>
+                                    {{ error }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                    </p>
+                    <p>
+                    {{ quote_form.text.label(text=gettext("Text <span class=\"required\">*</span>"))|safe }} {{ quote_form.text() }}
+
+                    {% with errors=quote_form.text.errors %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>
+                                    {{ error }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                    </p>
+
+                    <button class="btn btn-danger" name="cancel_quote" style="margin-left: 150px">{{ gettext("Cancel") }}</button>
+
+                    <button type="submit" class="btn" name="submit_quote" style="margin-left: 10px;">{{ gettext("Send") }}</button>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="aboutCF">
+                <h3>{{ _("Get ready for <strong>GAMESPLANET LAB</strong>.") }}</h3>
+                <p class="announceBig">
+                {{ _("The very first platform specifically designed for gamers eager to support innovative <strong>video games projects</strong>.</p>") }}
+                <p class="announceSmall">
+                {{ _("From test-tube to prototype, support and interact directly with <strong>professional studios</strong> as they develop tomorrow's <strong>gaming hits</strong>, while receiving exclusive rewards to show off your dedication!") }}
+                </p>
+                {% set contest_btn = "img/cta_commitments_" + lang + ".png" %}
+                <p style="position: relative;">
+                <a style="color: #444; right: -30px; position: absolute; bottom: -45px;" href="{{ url_for('commitments', lang=lang) }}" target="_blank"><img src="{{ url_for('static', filename=contest_btn) }}" /></a>
+            </div>
+            <div class="pageWidth" id="contact-form-container">
+                <form method="POST" action="." id="contact-form">
+                    <p class="description">
+                    {{ _("Register now and get the chance to win awesome prizes (rewards valued at 5000€!):") }}
+
+                    <ul class="rewards">
+                        <li>{{ _("a 2-day tour of Kiev's pepper vodka bars with the developers of Magrunner!") }}</li>
+                        <li>{{ _("an ingame character modeled after YOU in Pendulo's new game!") }}</li>
+                    </ul>
+                    </p>
+                    {{ contact_form.csrf_token }}
+
+                    {{ contact_form.email(**{'data-default-value': _("Email address") }) }}
+
+                    <input id="notifyBT" type="submit" value="{{ _("Notify me") }}" name="submit_contact" />
+
+                    {% with errors=contact_form.email.errors %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>
+                                    {{ error }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                </form>
+
+                {% set pdf = lang + ".pdf" %}
+                {% set contest_btn = "img/cta_rules_" + lang + ".png" %}
+                <p style="text-align: right; margin-right: 20px">
+                    <a style="color: #444" href="{{ url_for('static', filename=pdf) }}" target="_blank">{{ _("Contest rules")}}</a>
+                </p>
+            </div>
+            <div id="labContent">
+                <h2>{{ _("Featured Projects") }}</h2>
+                <div class="featProject even">
+                    <img src="{{ url_for('static', filename='img/magrunner.jpg') }}" alt="NYC - Newton-Yoshi-Cthulhu" />
+                    <p class="projectInfos">
+                    <span class="projectTitle">Magrunner: Dark Pulse</span> - {{ _("first-person action puzzle game set in a cyberpunk version of H.P. Lovecraft’s Cthulhu Mythos!") }}
+                    </p>
+                </div>
+                <div class="featProject">
+                    <img src="{{ url_for('static', filename='img/dayone.jpg') }}" alt="DAY ONE" />
+                    <p class="projectInfos">
+                    <span class="projectTitle">DAY ONE</span> - {{ _("Team up with Pendulo Studios, the authors of <strong>RUNAWAY</strong> to create an adventure that will be more than just a game") }}
+                    </p>
+                </div>
+                <div class="featProject even">
+                    <img src="{{ url_for('static', filename='img/upcoming.jpg') }}" alt="Upcoming" />
+                    <p class="projectInfos">
+                    <span class="projectTitle">{{ _("UPCOMING PROJECT") }}</span> - {{ _("Who knows what the future holds ?") }}
+                    </p>
+                </div>
+                <div class="featProject">
+                    <img src="{{ url_for('static', filename='img/more2come.png') }}" alt="{{ _("More to come...") }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="landingFooter">
+        <div class="pageWidth">
+            <div class="shareZone">
+                <div class="share facebook">
+                    <img src="{{ url_for('static', filename='img/fb_icon.png') }}" />
+                    <p>{{ _("Share the lab!") }}</p>
+                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.lab.gamesplanet.com&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+                <div class="share tweeter">
+                    <img src="{{ url_for('static', filename='img/tweet_icon.png') }}" />
+                    <p>{{ _("Tweet about it!") }}</p>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.lab.gamesplanet.com">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </div>
+
+            <div style="clear: both"></div>
+
+            <div style="margin-top: 50px">
+                <p style="color: #fff; text-align: center; margin-bottom: 20px;">
+                {{ _("Gamesplanet Lab, the very first platform specifically designed for gamers") }}
+                </p>
+
+                <div style="text-align: center">
+                    <a href="http://gamesplanet.com" style="margin-right: 50px; text-decoration: none" target="_blank">
+                        <img src="{{ url_for('static', filename='img/gamesplanet.png') }}" />
+                    </a>
+                    <a href="http://www.ulule.com" style="text-decoration: none" target="_blank">
+                        <img src="{{ url_for('static', filename='img/ulule.png') }}" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extend_js %}
+    <script type="text/template" id="quote-template">
+        <div class="quote-detail" data-identifier="<%= quote.id %>">
+            <span class="quoteCitation">"<%= quote.text %>"</span>
+            <span class="quoteAuthor">- <%= quote.author %></span>
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var contact_field = $('#contact_form-email');
+
+            if (!contact_field.val()) {
+                contact_field.val(contact_field.data('default-value'));
+            }
+
+            contact_field.click(function() {
+                if (contact_field.val() == contact_field.data('default-value')) {
+                    contact_field.val('');
+                }
+            });
+        });
+
+        $('#submitQuote').click(function(e) {
+            e.preventDefault();
+            $('#quote-form-container').slideToggle();
+            $(this).toggleClass('active');
+        });
+
+        $('button[name=cancel_quote]').click(function(e) {
+            e.preventDefault();
+
+            $('#quote-form-container').slideUp();
+        });
+
+        $('#changeQuote').live('click', function(e) {
+            e.preventDefault();
+
+            $.post("{{ url_for('quote_random', lang=lang) }}", {quote_id: $('.quote-detail').data('identifier')}, function(data) {
+                $('.quote-detail').fadeOut('slow', function() {
+                    $('.quote-detail').remove();
+
+                    $('.quoteActions').before(_.template($('#quote-template').html(), {
+                        'quote': data
+                        }));
+                    });
+                });
+            });
+    </script>
+{% endblock %}

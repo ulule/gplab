@@ -1,0 +1,5 @@
+include requirements.txt
+recursive-include gplab/templates *
+recursive-include gplab/translations *
+recursive-include gplab/messages.pot
+recursive-include gplab/static *

@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+
+* { padding: 0; margin: 0;}
+body { font-family: 'Doppio One', sans-serif; color: #444; letter-spacing: -1px;}
+#landingContainer {}
+.pageWidth { width: 950px; margin: 0 auto;}
+
+#landingHeader { height: 71px; background: url("../img/header_bg.png") repeat-x;}
+#landingHeader h1 { text-indent: -999em; width: 400px; height: 47px; margin: 8px 0 0; background: url("../img/GPLab_logo.png") no-repeat 0 10px; float: left;}
+#landingHeader p { font-size: 13px; letter-spacing: 0; padding: 31px 65px 0 0; margin-top: 7px; background: url("../img/Ulule_logo.png") no-repeat right top; float: right;}
+#landingHeader p span { text-indent: -999em; height: 30px; display: block;}
+
+#landingContent { clear: both; overflow: auto;}
+#landingContent .randomQuote { font-size: 27px; line-height: 1.1em; width: 830px; margin: 10px auto; position: relative; overflow: auto;}
+.randomQuote .quoteCitation { font-style: italic;}
+.randomQuote .quoteAuthor { color: #FF622E; text-transform: uppercase; text-align: right; display: block;}
+
+.randomQuote .quoteActions { float: right;}
+.randomQuote .quoteActions a { font-size: 10px; color: #AAA;  text-transform: uppercase; letter-spacing: 0; text-decoration: none; padding: 0 4px 0 16px; margin-left: 5px;
+                               border: 1px solid #AAA; border-radius: 3px; background: url("../img/quoteBT_icons.png") no-repeat;}
+.quoteActions a.changeQuote { background-position: 0 0;}
+.quoteActions a.submitQuote { background-position: 0 -26px;}
+.quoteActions a:hover { color: #464646; border: 1px solid #464646;}
+.quoteActions a.active { color: #464646; border: 1px solid #464646;}
+.quoteActions a:hover.changeQuote { background-position: 0 -13px;}
+.quoteActions a:hover.submitQuote { background-position: 0 -39px;}
+.quoteActions a.active.submitQuote { background-position: 0 -39px;}
+
+
+#landingContent .aboutCF { color: #FBDFCD; height: 210px; padding: 35px 80px 0 250px; background: url("../img/aboutCF_bg.png") no-repeat center 0;}
+.aboutCF h3 { font-size: 22px; font-weight: normal; text-transform: uppercase;}
+.aboutCF p { line-height: 1.1em; margin-top: 20px;}
+.aboutCF strong { color: #FFF;}
+.aboutCF .announceBig { font-size: 17px;}
+.aboutCF .announceSmall { font-size: 17px;}
+
+#labContent { width: 925px; margin: 0 auto; overflow: auto;}
+#labContent h2 { font-size: 34px; font-weight: normal; text-transform: uppercase; padding-left: 70px; margin: 30px 0 20px; border-bottom: 1px solid #D0D0D0;
+                background: url("../img/bigTitle_bg.png") no-repeat scroll 0 0 transparent;}
+#labContent .featProject { width: 445px; margin-bottom: 20px; float: left;}
+#labContent .featProject.even { margin-right: 35px;}
+.featProject img { border: none; border-radius: 8px;}
+.featProject:nth-of-type(3) img { border: 1px solid #999;}
+.featProject p { font-size: 16px; color: #595959;}
+.featProject p strong { color: #383838;}
+.featProject p .projectTitle { font-size: 18px; color: #FFFFFF; line-height: 0.9em; padding: 0 5px 1px; background: #FF622E; border-radius: 4px; display: inline-block;}
+#labContent .more2come {}
+
+#landingFooter { padding-top: 20px; height: 290px; background: url("../img/footer_bg.png") repeat-x; background-color: rgb(98, 98, 98); }
+.pageWidth form { padding-top: 15px; margin: 0 auto 15px;}
+.pageWidth form #contact_form-email{ font-family: "Doppio One", sans-serif; font-size: 28px; color: #8D8D8D; letter-spacing: -1px; width: 665px; height: 60px; padding-left: 20px;
+                           border: 1px solid #626262; border-radius: 8px 0 0 8px;}
+.pageWidth form #notifyBT{ font-family: "Doppio One",sans-serif; color: #FFF; font-size: 30px; letter-spacing: -1px; text-shadow: -1px -1px 0 #972903; width: 180px; height: 62px; margin: 0 0 0 -4px;
+                                background: url("../img/submitBT_bg.png") repeat-x; border: 1px solid #626262; border-radius: 0 8px 8px 0; vertical-align: top; cursor: pointer;}
+
+#landingFooter .shareZone { width: 430px; margin: 0 auto;}
+.shareZone .share { width: 190px; height: 58px; background: url("../img/shareBlock_bg.png") repeat-x; border: 1px solid #838383; border-radius: 6px;}
+.shareZone .share img { float: left; padding: 5px 5px 0 5px;}
+.shareZone .share p { color: #FFF; padding-top: 5px; margin-left: 60px;}
+.share iframe { margin: 4px 0 0 5px;}
+.share.facebook { float: left;}
+.share.tweeter { float: right;}
+
+#contact-form { width: 870px;}
+#contact-form p.description { font-size: 22px; line-height: 1.05em; padding: 20px 0 10px;}
+#contact-form ul.errors { padding-left: 20px;}
+#contact-form-container {
+    background-color: #F7DE6A;
+    margin: 35px auto 10px;
+    padding-bottom: 20px;
+    width: 900px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#contact-form-container ul.rewards {
+    margin: 0 0 10px;
+    padding-left: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#contact-form-container ul.rewards li {
+    position: relative;
+}
+
+#contact-form-container ul.rewards li span {
+    position: absolute;
+    left: -90px;
+}
+
+#commitments, #faq {
+    margin: 0 auto;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+#commitments p, #faq p {
+    margin: 1em 0;
+}
+
+#commitments h4, #faq h4 {
+    margin: 1.33em 0;
+}
