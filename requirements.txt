@@ -4,7 +4,7 @@ redisco==0.1.4
 Flask-WTF==0.6
 Flask-Assets==0.7
 yuicompressor==2.4.7
-tablib==0.9.11
+tablib==0.11.5
 raven==1.9.1
 blinker==1.2
 Flask-Babel==0.8
